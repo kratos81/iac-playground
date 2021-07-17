@@ -1,2 +1,5 @@
 #! /bin/bash
-export TF_VAR_AMI_ID=$(jq -r '.builds[-1].artifact_id' manifest.json | cut -d ":" -f2)
+export TF_VAR_ami_id=$(jq -r '.builds[-1].artifact_id' manifest.json | cut -d ":" -f2)
+cd infra
+terraform plan 
+terraform apply -auto-approve 

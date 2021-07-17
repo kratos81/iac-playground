@@ -3,7 +3,7 @@ source "googlecompute" "basic-example" {
   source_image = "debian-9-stretch-v20200805"
   ssh_username = "packer"
   zone         = "us-central1-a"
-  image_name   = "infra-test-1"
+  image_name   = "infra-test-2"
   account_file = "key.json"
   image_labels = {
     application = "test"

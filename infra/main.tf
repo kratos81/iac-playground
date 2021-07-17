@@ -22,7 +22,7 @@ data "google_compute_image" "test-image" {
 }
 
 resource "google_compute_instance" "infra-test" {
-  name         = "infra-test"
+  name         = var.ami_id 
   machine_type = "e2-medium"
   zone         = "us-central1-a"
   tags         = ["foo", "bar"]
