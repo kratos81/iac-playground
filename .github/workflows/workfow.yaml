@@ -1,6 +1,6 @@
 ---
 
-name: Packer
+name: Infra
 
 on:
   push:
@@ -40,17 +40,6 @@ jobs:
 
       # additional steps to process artifacts
 
-
-
-name: 'Terraform CI'
-
-on:
-  push:
-    branches:
-    - main
-  pull_request:
-
-jobs:
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
