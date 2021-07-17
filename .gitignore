@@ -1,2 +1,2 @@
 *.log 
-packer.json 
+*.json 
